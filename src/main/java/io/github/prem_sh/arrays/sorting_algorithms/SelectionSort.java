@@ -1,7 +1,5 @@
-package org.example.arrays.sorting_algorithms;
+package io.github.prem_sh.arrays.sorting_algorithms;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
 import java.util.Comparator;
 
 public class SelectionSort<T extends Comparable<T>> implements SortingAlgorithm<T>{

@@ -1,4 +1,4 @@
-package org.example;
+package io.github.prem_sh;
 
 public class Main {
     public static void main(String[] args) {

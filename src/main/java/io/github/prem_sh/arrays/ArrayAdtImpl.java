@@ -1,7 +1,7 @@
-package org.example.arrays;
+package io.github.prem_sh.arrays;
 
-import org.example.arrays.sorting_algorithms.SelectionSort;
-import org.example.arrays.sorting_algorithms.SortingAlgorithm;
+import io.github.prem_sh.arrays.sorting_algorithms.SortingAlgorithm;
+import io.github.prem_sh.arrays.sorting_algorithms.SelectionSort;
 
 import java.util.Arrays;
 import java.util.Comparator;

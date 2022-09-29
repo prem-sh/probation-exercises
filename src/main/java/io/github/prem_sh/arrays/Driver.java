@@ -1,7 +1,7 @@
-package org.example.arrays;
+package io.github.prem_sh.arrays;
 
-import org.example.arrays.sorting_algorithms.BubbleSort;
-import org.example.arrays.sorting_algorithms.InsertionSort;
+import io.github.prem_sh.arrays.sorting_algorithms.BubbleSort;
+import io.github.prem_sh.arrays.sorting_algorithms.InsertionSort;
 
 import java.util.Arrays;
 import java.util.Comparator;

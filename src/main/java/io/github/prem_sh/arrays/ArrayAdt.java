@@ -1,8 +1,6 @@
-package org.example.arrays;
+package io.github.prem_sh.arrays;
 
-import org.example.arrays.sorting_algorithms.SortingAlgorithm;
-
-import java.util.Comparator;
+import io.github.prem_sh.arrays.sorting_algorithms.SortingAlgorithm;
 
 public interface ArrayAdt<T extends Comparable<T>>  extends ArrayAdtUtils<T>{
     T[] getArray();

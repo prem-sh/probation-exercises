@@ -1,4 +1,4 @@
-package org.example.arrays.sorting_algorithms;
+package io.github.prem_sh.arrays.sorting_algorithms;
 
 import java.util.Comparator;
 

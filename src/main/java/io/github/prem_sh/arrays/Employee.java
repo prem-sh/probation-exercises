@@ -1,4 +1,4 @@
-package org.example.arrays;
+package io.github.prem_sh.arrays;
 
 public class Employee implements Comparable<Employee> {
     Integer id;
