@@ -18,11 +18,6 @@ public interface ArrayAdtUtils<T extends Comparable<T>> {
     T max(Comparator<T> comparator);
     T min(int nth, Comparator<T> comparator);
     T max(int nth, Comparator<T> comparator);
-    void union(ArrayAdt<T> arr);
-    void intersect(ArrayAdt<T> arr);
-    boolean hasAll(ArrayAdt<T> arr);
-    void retainAll(ArrayAdt<T> arr);
-    void removeAll(ArrayAdt<T> arr);
     ArrayAdt<T> filter();
     ArrayAdt<T> map();
     void foreach();

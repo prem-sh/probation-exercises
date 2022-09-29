@@ -185,6 +185,30 @@ public class Driver {
 
         System.out.println("\n$$$ Time taken for Selection sort to complete all above operations : "+(end-start));
 
+        System.out.println("\n\n\n=============== [ Min Max variants ] ============");
+
+        System.out.println("Array        : "+arr);
+        System.out.println("Smallest     : "+ arr.min());
+        System.out.println("Largest      : "+ arr.max());
+        System.out.println("3rd Smallest : "+ arr.min(3));
+        System.out.println("2nd Largest  : "+ arr.max(2));
+
+        employees.add(new Employee(10,"Aarya", 500000L));
+        employees.add(new Employee(9,"Yash", 5000000L));
+        System.out.println("\n\nEmployees       : "+employees);
+
+        System.out.println("\nSmallest name     : "+ employees.min((e1, e2)->e1.name.compareTo(e2.name)));
+        System.out.println("Largest name        : "+ employees.max((e1, e2)->e1.name.compareTo(e2.name)));
+        System.out.println("2nd Smallest name   : "+ employees.min(2,(e1, e2)->e1.name.compareTo(e2.name)));
+        System.out.println("2nd Largest name    : "+ employees.max(2,(e1, e2)->e1.name.compareTo(e2.name)));
+
+        System.out.println("Smallest salary     : "+ employees.min((e1, e2)->e1.salary.compareTo(e2.salary)));
+        System.out.println("Largest salary      : "+ employees.max((e1, e2)->e1.salary.compareTo(e2.salary)));
+        System.out.println("2nd Smallest salary : "+ employees.min(2,(e1, e2)->e1.salary.compareTo(e2.salary)));
+        System.out.println("2nd Largest salary  : "+ employees.max(2,(e1, e2)->e1.salary.compareTo(e2.salary)));
+
+        System.out.println("\n\n\n=============== [ Functions API ] ============");
+
 
 
 

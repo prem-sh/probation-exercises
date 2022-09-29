@@ -24,12 +24,12 @@ public class ArrayAdtImpl<T extends Comparable<T>> implements ArrayAdt<T>{
     }
     public ArrayAdtImpl(T... source){
         this.store = source;
-        last = -1;
+        last = source.length-1;
         sortingStrategy = new SelectionSort<T>();
     }
     public ArrayAdtImpl(ArrayAdt<T> source){
         this.store = source.getArray();
-        last = -1;
+        last = source.length()-1;
         sortingStrategy = new SelectionSort<T>();
     }
     @Override
@@ -257,7 +257,9 @@ public class ArrayAdtImpl<T extends Comparable<T>> implements ArrayAdt<T>{
 
     @Override
     public void swap(int idx1, int idx2) {
-
+        T temp = store[idx1];
+        store[idx1] = store[idx2];
+        store[idx2] = temp;
     }
 
     @Override
@@ -282,67 +284,82 @@ public class ArrayAdtImpl<T extends Comparable<T>> implements ArrayAdt<T>{
 
     @Override
     public T min() {
-        return null;
+        if(last == -1) return null;
+        T smallest = store[0];
+        for(int i=0; i<=last; i++)
+            if(smallest.compareTo(store[i])>0)
+                smallest = store[i];
+        return smallest;
     }
 
     @Override
     public T max() {
-        return null;
+        if(last == -1) return null;
+        T largest = store[0];
+        for(int i=0; i<=last; i++)
+            if(largest.compareTo(store[i])<0)
+                largest = store[i];
+        return largest;
     }
 
     @Override
     public T min(int n) {
-        return null;
+        n--;
+        if(last == -1) return null;
+        if(n>last || n < 0) return null;
+        ArrayAdtImpl<T> temp = new ArrayAdtImpl<>(this);
+        temp.sort();
+        return temp.get(n);
     }
 
     @Override
     public T max(int n) {
-        return null;
+        n--;
+        if(last == -1) return null;
+        if(n>last || n < 0) return null;
+        ArrayAdtImpl<T> temp = new ArrayAdtImpl<>(this);
+        temp.sort(true);
+        return temp.get(n);
     }
 
     @Override
     public T min(Comparator<T> comparator) {
-        return null;
+        if(last == -1) return null;
+        T smallest = store[0];
+        for(int i=0; i<=last; i++)
+            if(comparator.compare(smallest,store[i])>0)
+                smallest = store[i];
+        return smallest;
     }
 
     @Override
     public T max(Comparator<T> comparator) {
-        return null;
+        if(last == -1) return null;
+        T largest = store[0];
+        for(int i=0; i<=last; i++)
+            if(comparator.compare(largest,store[i])<0)
+                largest = store[i];
+        return largest;
     }
 
     @Override
     public T min(int nth, Comparator<T> comparator) {
-        return null;
+        nth--;
+        if(last == -1) return null;
+        if(nth>last || nth < 0) return null;
+        ArrayAdtImpl<T> temp = new ArrayAdtImpl<>(this);
+        temp.sort(comparator);
+        return temp.get(nth);
     }
 
     @Override
     public T max(int nth, Comparator<T> comparator) {
-        return null;
-    }
-
-    @Override
-    public void union(ArrayAdt<T> arr) {
-
-    }
-
-    @Override
-    public void intersect(ArrayAdt<T> arr) {
-
-    }
-
-    @Override
-    public boolean hasAll(ArrayAdt<T> arr) {
-        return false;
-    }
-
-    @Override
-    public void retainAll(ArrayAdt<T> arr) {
-
-    }
-
-    @Override
-    public void removeAll(ArrayAdt<T> arr) {
-
+        nth--;
+        if(last == -1) return null;
+        if(nth>last || nth < 0) return null;
+        ArrayAdtImpl<T> temp = new ArrayAdtImpl<>(this);
+        temp.sort(true, comparator);
+        return temp.get(nth);
     }
 
     @Override
