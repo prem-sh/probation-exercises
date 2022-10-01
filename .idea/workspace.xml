@@ -5,11 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba07098c-5608-4416-bf14-a91ac0e4693d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/prem_sh/arrays/sorting_algorithms/MergeSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/prem_sh/lambdas/Apple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/prem_sh/lambdas/AppleColour.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/prem_sh/lambdas/Apples.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/prem_sh/lambdas/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/prem_sh/lambdas/FourArgs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/prem_sh/lambdas/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/prem_sh/streams/Dish.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/prem_sh/streams/Driver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/prem_sh/arrays/ArrayAdt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/prem_sh/arrays/ArrayAdt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/prem_sh/arrays/ArrayAdtImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/prem_sh/arrays/ArrayAdtImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/github/prem_sh/arrays/ArrayAdtUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/prem_sh/arrays/ArrayAdtUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/prem_sh/arrays/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/prem_sh/arrays/Driver.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +54,7 @@
     &quot;last_opened_file_path&quot;: &quot;/home/prem/Project/probation-exercise&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.io.github.prem_sh.streams.Driver">
     <configuration name="Driver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.github.prem_sh.arrays.Driver" />
       <module name="probation-exercise" />
@@ -60,9 +68,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="io.github.prem_sh.lambdas.Driver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.github.prem_sh.lambdas.Driver" />
+      <module name="probation-exercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.prem_sh.lambdas.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="io.github.prem_sh.streams.Driver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.github.prem_sh.streams.Driver" />
+      <module name="probation-exercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.prem_sh.streams.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.github.prem_sh.lambdas.test" />
+      <module name="probation-exercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.prem_sh.lambdas.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.io.github.prem_sh.streams.Driver" />
+        <item itemvalue="Application.io.github.prem_sh.lambdas.Driver" />
         <item itemvalue="Application.Driver" />
+        <item itemvalue="Application.test" />
       </list>
     </recent_temporary>
   </component>

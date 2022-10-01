@@ -18,8 +18,5 @@ public interface ArrayAdtUtils<T extends Comparable<T>> {
     T max(Comparator<T> comparator);
     T min(int nth, Comparator<T> comparator);
     T max(int nth, Comparator<T> comparator);
-    ArrayAdt<T> filter();
-    ArrayAdt<T> map();
-    void foreach();
     void print();
 }

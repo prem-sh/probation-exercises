@@ -243,7 +243,7 @@ public class ArrayAdtImpl<T extends Comparable<T>> implements ArrayAdt<T>{
         for (int i=last; i>0; i--){
             store[i]=store[i-1];
         }
-        store[0]=lastEle;
+        store[0]= lastEle;
     }
 
     @Override
@@ -360,21 +360,6 @@ public class ArrayAdtImpl<T extends Comparable<T>> implements ArrayAdt<T>{
         ArrayAdtImpl<T> temp = new ArrayAdtImpl<>(this);
         temp.sort(true, comparator);
         return temp.get(nth);
-    }
-
-    @Override
-    public ArrayAdt<T> filter() {
-        return null;
-    }
-
-    @Override
-    public ArrayAdt<T> map() {
-        return null;
-    }
-
-    @Override
-    public void foreach() {
-
     }
 
     @Override

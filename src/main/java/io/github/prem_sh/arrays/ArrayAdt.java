@@ -2,7 +2,7 @@ package io.github.prem_sh.arrays;
 
 import io.github.prem_sh.arrays.sorting_algorithms.SortingAlgorithm;
 
-public interface ArrayAdt<T extends Comparable<T>>  extends ArrayAdtUtils<T>{
+public interface ArrayAdt<T extends Comparable<T>> extends ArrayAdtUtils<T>{
     T[] getArray();
     int length();
     int size();
