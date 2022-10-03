@@ -8,28 +8,28 @@ import java.util.function.Predicate;
 public class MergeSort<T extends Comparable<T>> implements SortingAlgorithm<T>{
     @Override
     public void sort(T[] store) {
-        sort(store, 0, store.length,(a,b)->a.compareTo(b)<=0);
+        sort(store, 0, findLast(store),(a,b)->a.compareTo(b)<=0);
     }
 
     @Override
     public void sort(T[] store, boolean reverse) {
-        if(reverse) sort(store, 0, store.length,(a,b)->a.compareTo(b)>=0);
-        else sort(store, 0, store.length,(a,b)->a.compareTo(b)<=0);
+        if(reverse) sort(store, 0, findLast(store),(a,b)->a.compareTo(b)>=0);
+        else sort(store, 0, findLast(store),(a,b)->a.compareTo(b)<=0);
     }
 
     @Override
     public void sort(T[] store, Comparator<T> comparator) {
-        sort(store, 0, store.length,(a,b)->comparator.compare(a,b)<=0);
+        sort(store, 0, findLast(store), (a,b)->comparator.compare(a,b)<=0);
     }
 
     @Override
     public void sort(T[] store, boolean reverse, Comparator<T> comparator) {
-        if (reverse) sort(store, 0, store.length,(a,b)->comparator.compare(a,b)<=0);
-        else sort(store, 0, store.length,(a,b)->comparator.compare(a,b)>=0);
+        if (reverse) sort(store, 0, findLast(store),(a,b)->comparator.compare(a,b)<=0);
+        else sort(store, 0, findLast(store),(a,b)->comparator.compare(a,b)>=0);
     }
 
     private void sort(T[] array, int left, int right, BiPredicate<T, T> predicate){
-        if(left < right) {
+        if(left <= right) {
             int mid = left + (right - left) / 2;
             sort(array, left, mid, predicate);
             sort(array, mid + 1, right, predicate);
@@ -55,6 +55,17 @@ public class MergeSort<T extends Comparable<T>> implements SortingAlgorithm<T>{
 
         while (i < lenL) array[k++] = left[i++];
         while (j < lenR) array[k++] = right[j++];
+    }
+
+    private int findLast(T[] store){
+        int count = 0;
+        while(store.length>count){
+            if(store[count]==null){
+                break;
+            }
+            count++;
+        }
+        return  --count;
     }
 
 }

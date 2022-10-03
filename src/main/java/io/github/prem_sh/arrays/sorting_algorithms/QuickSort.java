@@ -7,24 +7,24 @@ import java.util.function.BiPredicate;
 public class QuickSort<T extends Comparable<T>> implements SortingAlgorithm<T>{
     @Override
     public void sort(T[] store) {
-        quickSort(store, 0, store.length-1, (a,b)->a.compareTo(b)<0);
+        quickSort(store, 0, findLast(store), (a,b)->a.compareTo(b)<0);
     }
 
     @Override
     public void sort(T[] store, boolean reverse) {
-        if(reverse) quickSort(store, 0, store.length-1, (a,b)->a.compareTo(b)>0);
-        else quickSort(store, 0, store.length-1, (a,b)->a.compareTo(b)<0);
+        if(reverse) quickSort(store, 0, findLast(store), (a,b)->a.compareTo(b)>0);
+        else quickSort(store, 0, findLast(store), (a,b)->a.compareTo(b)<0);
     }
 
     @Override
     public void sort(T[] store, Comparator<T> comparator) {
-        quickSort(store,0,store.length-1, (a,b)->comparator.compare(a,b)<0);
+        quickSort(store,0, findLast(store), (a,b)->comparator.compare(a,b)<0);
     }
 
     @Override
     public void sort(T[] store, boolean reverse, Comparator<T> comparator) {
-        if(reverse) quickSort(store,0,store.length-1, (a,b)->comparator.compare(a,b)<0);
-        quickSort(store,0,store.length-1, (a,b)->comparator.compare(a,b)>0);
+        if(reverse) quickSort(store,0, findLast(store), (a,b)->comparator.compare(a,b)<0);
+        quickSort(store,0, findLast(store), (a,b)->comparator.compare(a,b)>0);
     }
 
     public void quickSort(T[] array, int left, int right, BiPredicate<T,T> predicate){
@@ -55,8 +55,21 @@ public class QuickSort<T extends Comparable<T>> implements SortingAlgorithm<T>{
         Integer[] arr = {33,100,60,59,4,23,45,99};
         QuickSort<Integer> qs = new QuickSort<>();
         System.out.println(Arrays.toString(arr));
-        qs.quickSort(arr, 0, arr.length-1, (a,b)->a.compareTo(b)<0);
+        qs.quickSort(arr, 0, qs.findLast(arr), (a,b)->a.compareTo(b)<0);
         System.out.println(Arrays.toString(arr));
     }
+
+    private int findLast(T[] store){
+
+        int count = 0;
+        while(store.length>count){
+            if(store[count]==null){
+                break;
+            }
+            count++;
+        }
+        return  --count;
+    }
+
 
 }
