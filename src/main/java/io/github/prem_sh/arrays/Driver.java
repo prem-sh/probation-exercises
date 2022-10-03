@@ -2,6 +2,7 @@ package io.github.prem_sh.arrays;
 
 import io.github.prem_sh.arrays.sorting_algorithms.BubbleSort;
 import io.github.prem_sh.arrays.sorting_algorithms.InsertionSort;
+import io.github.prem_sh.arrays.sorting_algorithms.QuickSort;
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -151,7 +152,7 @@ public class Driver {
 
         end = System.nanoTime();
 
-        System.out.println("\n$$$ Time taken for Selection sort to complete all above operations : "+(end-start));
+        System.out.println("\n$$$ Time taken for Bubble sort to complete all above operations : "+(end-start));
 
         //reset
         employees.clear();
@@ -183,7 +184,67 @@ public class Driver {
 
         end = System.nanoTime();
 
-        System.out.println("\n$$$ Time taken for Selection sort to complete all above operations : "+(end-start));
+        System.out.println("\n$$$ Time taken for Insertion sort to complete all above operations : "+(end-start));
+
+        //reset
+        employees.clear();
+        employees.add(new Employee(3,"Ajay", 100000L));
+        employees.add(new Employee(1,"Zoran", 900000L));
+        employees.add(new Employee(5,"Vicky", 50000L));
+
+
+        System.out.println("\n\n-------------------- Merge sort performance --------------------");
+
+        start = System.nanoTime();
+
+        employees.setSortingStrategy(new InsertionSort<>());
+        System.out.println("STRATEGY USED : "+employees.getSortingStrategy());
+        System.out.println("\nBefore Sorting  : "+employees);
+        employees.sort();
+        System.out.println("Sort by ID      : "+employees);
+        employees.sort(new Comparator<Employee>() {
+            @Override
+            public int compare(Employee o1, Employee o2) {
+                return (int) (o1.salary-o2.salary);
+            }
+        });
+        System.out.println("Sort by Salary  : "+employees);
+        employees.sort((e1, e2)->e1.name.compareTo(e2.name));
+        System.out.println("Sort by Name    : "+employees);
+        employees.sort(true);
+        System.out.println("Sort by ID (reverse)  : "+ employees);
+
+        end = System.nanoTime();
+
+        System.out.println("\n$$$ Time taken for Merge sort to complete all above operations : "+(end-start));
+
+
+        System.out.println("\n\n-------------------- Quick sort performance --------------------");
+
+        start = System.nanoTime();
+
+        employees.setSortingStrategy(new QuickSort<>());
+        System.out.println("STRATEGY USED : "+employees.getSortingStrategy());
+        System.out.println("\nBefore Sorting  : "+employees);
+        employees.sort();
+        System.out.println("Sort by ID      : "+employees);
+        employees.sort(new Comparator<Employee>() {
+            @Override
+            public int compare(Employee o1, Employee o2) {
+                return (int) (o1.salary-o2.salary);
+            }
+        });
+        System.out.println("Sort by Salary  : "+employees);
+        employees.sort((e1, e2)->e1.name.compareTo(e2.name));
+        System.out.println("Sort by Name    : "+employees);
+        employees.sort(true);
+        System.out.println("Sort by ID (reverse)  : "+ employees);
+
+        end = System.nanoTime();
+
+        System.out.println("\n$$$ Time taken for Quick sort to complete all above operations : "+(end-start));
+
+
 
         System.out.println("\n\n\n=============== [ Min Max variants ] ============");
 
@@ -206,15 +267,6 @@ public class Driver {
         System.out.println("Largest salary      : "+ employees.max((e1, e2)->e1.salary.compareTo(e2.salary)));
         System.out.println("2nd Smallest salary : "+ employees.min(2,(e1, e2)->e1.salary.compareTo(e2.salary)));
         System.out.println("2nd Largest salary  : "+ employees.max(2,(e1, e2)->e1.salary.compareTo(e2.salary)));
-
-        System.out.println("\n\n\n=============== [ Functions API ] ============");
-
-
-
-
-
-
-
     }
 }
 

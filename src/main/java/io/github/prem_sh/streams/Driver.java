@@ -159,7 +159,7 @@ public class Driver {
                 .map(d->d.getName())
                 .forEach(System.out::println);
 
-        System.out.println("\n\n========  =========");
+        System.out.println("\n\n======== Skipping =========");
         dishes2.stream()
                 .limit(5)
                 .skip(2)
