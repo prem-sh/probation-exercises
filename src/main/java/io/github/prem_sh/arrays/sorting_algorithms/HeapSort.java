@@ -24,13 +24,13 @@ public class HeapSort<T extends Comparable<T>> implements SortingAlgorithm<T>{
     }
 
     public void heapSort(T arr[]){
-        int n = findLast(arr)+1;
+        int n = findLast(arr);
 
-        for (int i = n / 2 - 1; i >= 0; i--) {
+        for (int i = n / 2; i >= 0; i--) {
             heapify(arr, n, i);
         }
 
-        for (int i = n - 1; i >= 0; i--) {
+        for (int i = n; i >= 0; i--) {
             T temp = arr[0];
             arr[0] = arr[i];
             arr[i] = temp;
@@ -40,22 +40,22 @@ public class HeapSort<T extends Comparable<T>> implements SortingAlgorithm<T>{
     }
 
     void heapify(T arr[], int n, int i) {
-        int largest = i;
+        int root = i;
         int l = 2 * i + 1;
         int r = 2 * i + 2;
 
-        if (l < n && arr[l].compareTo(arr[largest])>0)
-            largest = l;
+        if (l < n && arr[l].compareTo(arr[root])>0)
+            root = l;
 
-        if (r < n && arr[r].compareTo(arr[largest])>0)
-            largest = r;
+        if (r < n && arr[r].compareTo(arr[root])>0)
+            root = r;
 
-        if (largest != i) {
+        if (root != i) {
             T swap = arr[i];
-            arr[i] = arr[largest];
-            arr[largest] = swap;
+            arr[i] = arr[root];
+            arr[root] = swap;
 
-            heapify(arr, n, largest);
+            heapify(arr, n, root);
         }
     }
 
