@@ -2,7 +2,7 @@ package io.github.prem_sh.arrays.sorting_algorithms;
 
 import java.util.Arrays;
 import java.util.Comparator;
-
+//TODO not implemented completely
 public class HeapSort<T extends Comparable<T>> implements SortingAlgorithm<T>{
     @Override
     public void sort(T[] store) {

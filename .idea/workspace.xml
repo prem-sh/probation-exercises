@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba07098c-5608-4416-bf14-a91ac0e4693d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/prem_sh/arrays/sorting_algorithms/HeapSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/prem_sh/collections/ListExperiment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/prem_sh/collections/MapExperiment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/prem_sh/collections/QueueExperiment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/prem_sh/collections/SetExperiment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/prem_sh/arrays/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/prem_sh/arrays/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/prem_sh/arrays/sorting_algorithms/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/prem_sh/arrays/sorting_algorithms/MergeSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/prem_sh/arrays/sorting_algorithms/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/prem_sh/arrays/sorting_algorithms/QuickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/prem_sh/arrays/sorting_algorithms/HeapSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/prem_sh/arrays/sorting_algorithms/HeapSort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,19 +46,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "/home/prem/Downloads/jdbcexp",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/prem/Downloads/jdbcexp&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/jdbceperiment/lib" />
@@ -69,13 +69,13 @@
       <recent name="$PROJECT_DIR$/jdbceperiment/src/main/java/org/example/db" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Driver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.github.prem_sh.arrays.Driver" />
+  <component name="RunManager" selected="Application.SetExperiment">
+    <configuration name="HeapSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.github.prem_sh.arrays.sorting_algorithms.HeapSort" />
       <module name="probation-exercise" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.github.prem_sh.arrays.*" />
+          <option name="PATTERN" value="io.github.prem_sh.arrays.sorting_algorithms.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -83,12 +83,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HeapSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.github.prem_sh.arrays.sorting_algorithms.HeapSort" />
+    <configuration name="ListExperiment" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.github.prem_sh.collections.ListExperiment" />
       <module name="probation-exercise" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.github.prem_sh.arrays.sorting_algorithms.*" />
+          <option name="PATTERN" value="io.github.prem_sh.collections.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,12 +111,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QuickSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.github.prem_sh.arrays.sorting_algorithms.QuickSort" />
+    <configuration name="MapExperiment" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.github.prem_sh.collections.MapExperiment" />
       <module name="probation-exercise" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.github.prem_sh.arrays.sorting_algorithms.*" />
+          <option name="PATTERN" value="io.github.prem_sh.collections.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,12 +124,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="io.github.prem_sh.streams.Driver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.github.prem_sh.streams.Driver" />
+    <configuration name="SetExperiment" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.github.prem_sh.collections.SetExperiment" />
       <module name="probation-exercise" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.github.prem_sh.streams.*" />
+          <option name="PATTERN" value="io.github.prem_sh.collections.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -138,19 +138,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Driver" />
+      <item itemvalue="Application.MapExperiment" />
+      <item itemvalue="Application.SetExperiment" />
+      <item itemvalue="Application.ListExperiment" />
       <item itemvalue="Application.HeapSort" />
-      <item itemvalue="Application.io.github.prem_sh.streams.Driver" />
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.QuickSort" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SetExperiment" />
+        <item itemvalue="Application.MapExperiment" />
+        <item itemvalue="Application.ListExperiment" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.HeapSort" />
-        <item itemvalue="Application.Driver" />
-        <item itemvalue="Application.QuickSort" />
-        <item itemvalue="Application.io.github.prem_sh.streams.Driver" />
       </list>
     </recent_temporary>
   </component>
