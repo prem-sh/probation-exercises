@@ -5,15 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba07098c-5608-4416-bf14-a91ac0e4693d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/prem_sh/arrays/problem_solving/ArraySum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/prem_sh/arrays/problem_solving/FindLength.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/prem_sh/arrays/problem_solving/FindOccurrences.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/prem_sh/arrays/problem_solving/LinearSearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/prem_sh/arrays/problem_solving/MergeArrays.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/prem_sh/arrays/problem_solving/ReverseArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/prem_sh/arrays/problem_solving/SumAvgMinMax.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/prem_sh/arrays/problem_solving/BinarySearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/prem_sh/arrays/problem_solving/MatrixAddition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/prem_sh/arrays/problem_solving/RemoveOdd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/prem_sh/arrays/problem_solving/SecondLargest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/prem_sh/arrays/problem_solving/TransposeMatrix.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/prem_sh/arrays/sorting_algorithms/HeapSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/prem_sh/arrays/sorting_algorithms/HeapSort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,9 +69,9 @@
       <recent name="$PROJECT_DIR$/jdbceperiment/src/main/java/org/example/db" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LinearSearch">
-    <configuration name="ArraySum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.github.prem_sh.arrays.problem_solving.ArraySum" />
+  <component name="RunManager" selected="Application.MatrixAddition">
+    <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.github.prem_sh.arrays.problem_solving.BinarySearch" />
       <module name="probation-exercise" />
       <extension name="coverage">
         <pattern>
@@ -86,8 +83,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FindOccurrences" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.github.prem_sh.arrays.problem_solving.FindOccurrences" />
+    <configuration name="MatrixAddition" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.github.prem_sh.arrays.problem_solving.MatrixAddition" />
       <module name="probation-exercise" />
       <extension name="coverage">
         <pattern>
@@ -99,8 +96,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinearSearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.github.prem_sh.arrays.problem_solving.LinearSearch" />
+    <configuration name="RemoveOdd" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.github.prem_sh.arrays.problem_solving.RemoveOdd" />
       <module name="probation-exercise" />
       <extension name="coverage">
         <pattern>
@@ -112,8 +109,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MergeArrays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.github.prem_sh.arrays.problem_solving.MergeArrays" />
+    <configuration name="ThirdSmallest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.github.prem_sh.arrays.problem_solving.ThirdSmallest" />
       <module name="probation-exercise" />
       <extension name="coverage">
         <pattern>
@@ -125,8 +122,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReverseArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.github.prem_sh.arrays.problem_solving.ReverseArray" />
+    <configuration name="TransposeMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.github.prem_sh.arrays.problem_solving.TransposeMatrix" />
       <module name="probation-exercise" />
       <extension name="coverage">
         <pattern>
@@ -139,19 +136,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ArraySum" />
-      <item itemvalue="Application.FindOccurrences" />
-      <item itemvalue="Application.LinearSearch" />
-      <item itemvalue="Application.MergeArrays" />
-      <item itemvalue="Application.ReverseArray" />
+      <item itemvalue="Application.BinarySearch" />
+      <item itemvalue="Application.MatrixAddition" />
+      <item itemvalue="Application.RemoveOdd" />
+      <item itemvalue="Application.TransposeMatrix" />
+      <item itemvalue="Application.ThirdSmallest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LinearSearch" />
-        <item itemvalue="Application.ReverseArray" />
-        <item itemvalue="Application.MergeArrays" />
-        <item itemvalue="Application.ArraySum" />
-        <item itemvalue="Application.FindOccurrences" />
+        <item itemvalue="Application.MatrixAddition" />
+        <item itemvalue="Application.TransposeMatrix" />
+        <item itemvalue="Application.BinarySearch" />
+        <item itemvalue="Application.RemoveOdd" />
+        <item itemvalue="Application.ThirdSmallest" />
       </list>
     </recent_temporary>
   </component>
