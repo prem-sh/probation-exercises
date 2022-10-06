@@ -36,19 +36,19 @@ public class QuickSort<T extends Comparable<T>> implements SortingAlgorithm<T>{
     }
     public int partition(T[] array, int left, int right, BiPredicate<T,T> predicate){
         T pivot = array[right];
-        int i = (left - 1);
+        int i = left;
         for (int j = left; j < right; j++) {
             if (predicate.test(array[j],pivot)) {
-                i++;
                 T temp = array[j];
                 array[j] = array[i];
                 array[i] = temp;
+                i++;
             }
         }
         T temp = array[right];
-        array[right] = array[i+1];
-        array[i+1] = temp;
-        return (i + 1);
+        array[right] = array[i];
+        array[i] = temp;
+        return (i);
     }
 
     public static void main(String[] args) {

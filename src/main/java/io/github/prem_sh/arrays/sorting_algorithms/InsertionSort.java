@@ -8,13 +8,12 @@ public class InsertionSort<T extends Comparable<T>> implements SortingAlgorithm<
         int last = findLast(store);
         T temp;
         for (int pos = 1; pos<=last; pos++){
-            int k = pos;
             for (int j=pos-1; j>=0; j--){
-                if(store[j].compareTo(store[k])>0){
+                if(store[j].compareTo(store[pos])>0){
                     temp = store[j];
-                    store[j] = store[k];
-                    store[k] = temp;
-                    k=j;
+                    store[j] = store[pos];
+                    store[pos] = temp;
+                    pos=j;
                 }
             }
         }

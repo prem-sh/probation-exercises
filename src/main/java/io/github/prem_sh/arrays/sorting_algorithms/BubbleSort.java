@@ -8,7 +8,7 @@ public class BubbleSort<T extends Comparable<T>> implements SortingAlgorithm<T>{
         int last = findLast(store);
         T temp;
         for (int i=0; i<=last; i++){
-            for (int j=1; j<=(last-i); j++){
+            for (int j=1; j<=last-i; j++){
                 if(store[j-1].compareTo(store[j])>0){
                     temp = store[j-1];
                     store[j-1] = store[j];

@@ -160,7 +160,14 @@ public class Driver {
         employees.add(new Employee(3,"Ajay", 100000L));
         employees.add(new Employee(1,"Zoran", 900000L));
         employees.add(new Employee(5,"Vicky", 50000L));
-        
+        employees.add(new Employee(3,"Ajay", 100000L));
+        employees.add(new Employee(1,"Zoran", 900000L));
+        employees.add(new Employee(5,"Vicky", 50000L));
+        employees.add(new Employee(3,"Ajay", 100000L));
+        employees.add(new Employee(1,"Zoran", 900000L));
+        employees.add(new Employee(5,"Vicky", 50000L));
+
+
         
         System.out.println("\n\n-------------------- Insertion sort performance --------------------");
 
